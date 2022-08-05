@@ -1,0 +1,19 @@
+footer {
+    display: flex;
+    width: 100%;
+    background-color: #F29849;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1% 0;
+}
+
+span {
+    margin-left: 2%;
+}
+
+a {
+    margin-right: 2%;
+}
