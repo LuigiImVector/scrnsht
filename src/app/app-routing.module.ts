@@ -1,7 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+import { HomepageComponent } from './pages/homepage/homepage.component';
+import { SaveComponent } from './pages/save/save.component';
+
+const routes: Routes = [
+  { path: '', component: HomepageComponent },
+  { path: 'save', component: SaveComponent },
+
+  // otherwise redirect to home
+  { path: '**', redirectTo: '' }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

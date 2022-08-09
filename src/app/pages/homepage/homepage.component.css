@@ -1,0 +1,19 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    color: #0B3D76;
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: 20vh;
+    margin: 0;
+}
+
+p {
+    width: 80%;
+    color: #2D6CAE;
+    margin: 3% auto;
+    font-weight: 500;
+    font-size: 3vh;
+}
