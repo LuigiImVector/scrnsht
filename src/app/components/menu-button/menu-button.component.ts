@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewChild, ViewEncapsulation, Input } from '@angular/core';
 
 @Component({
   selector: 'app-menu-button',
@@ -8,7 +8,7 @@ import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
 })
 
 export class MenuButtonComponent implements OnInit {
-  title = "Save screenshot"; // custom
+  @Input() title: string = "";
 
   constructor() { }
 
