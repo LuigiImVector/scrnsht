@@ -8,6 +8,11 @@ import { FooterComponent } from './components/footer/footer.component';
 
 import { SaveComponent } from './pages/save/save.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
+import { MenuContainerComponent } from './components/menu-container/menu-container.component';
+import { MenuButtonComponent } from './components/menu-button/menu-button.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatRippleModule } from '@angular/material/core';
 
 @NgModule({
   declarations: [
@@ -15,11 +20,15 @@ import { HomepageComponent } from './pages/homepage/homepage.component';
     InputUrlComponent,
     FooterComponent,
     SaveComponent,
-    HomepageComponent
+    HomepageComponent,
+    MenuContainerComponent,
+    MenuButtonComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatRippleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
