@@ -2,4 +2,4 @@
     <div class="menu-title align-center" (click)="updateClickStatus()" matRipple>{{ title }}</div>
     <ng-content></ng-content>
 </div>
-<app-menu-content [class]="'menu-section'" *ngIf="clicked && isButton"></app-menu-content>
+<app-menu-content [class]="'menu-section menu-content'" *ngIf="clicked && isButton"></app-menu-content>

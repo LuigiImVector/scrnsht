@@ -14,6 +14,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatRippleModule } from '@angular/material/core';
 import { MenuContentComponent } from './components/menu-content/menu-content.component';
+import { CustomScreenshotComponent } from './components/custom-screenshot/custom-screenshot.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { MenuContentComponent } from './components/menu-content/menu-content.com
     HomepageComponent,
     MenuContainerComponent,
     MenuSectionComponent,
-    MenuContentComponent
+    MenuContentComponent,
+    CustomScreenshotComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,26 @@
+.menu-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content:space-around; */
+    align-items: center;
+}
+
+.color-item {
+    width: 20%;
+    height: 2vmax;
+    background-color: red;
+    border: none;
+    box-sizing: border-box;
+    margin: 1%;
+    cursor: pointer;
+    animation: all 0.2s ease-in-out
+}
+
+.color-item:hover {
+    border: 1px dashed #17171780;
+}
+
+.color-item:active {
+    border: 1px dashed #171717;
+}
