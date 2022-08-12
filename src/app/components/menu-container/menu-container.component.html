@@ -1,4 +1,9 @@
 <div id="menu-container">
-    <app-menu-button [title]="'Save screenshot'"></app-menu-button>
-    <app-menu-button [title]="'Edit screenshot'"></app-menu-button>
+    <app-menu-section [title]="'Save screenshot'"></app-menu-section>
+
+    <app-menu-section [title]="'Edit screenshot'" (messageEvent)="receiveMessage($event)">
+        <app-menu-section [title]="'Button color'" [isButton]="true" [class]="'menu-button'" *ngIf="statusFromChild"></app-menu-section>     
+
+        <app-menu-section [title]="'Background color'" [isButton]="true" [class]="'menu-button'" *ngIf="statusFromChild"></app-menu-section>
+    </app-menu-section>
 </div>

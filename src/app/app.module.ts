@@ -9,10 +9,11 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SaveComponent } from './pages/save/save.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { MenuContainerComponent } from './components/menu-container/menu-container.component';
-import { MenuButtonComponent } from './components/menu-button/menu-button.component';
+import { MenuSectionComponent } from './components/menu-section/menu-section.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatRippleModule } from '@angular/material/core';
+import { MenuContentComponent } from './components/menu-content/menu-content.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { MatRippleModule } from '@angular/material/core';
     SaveComponent,
     HomepageComponent,
     MenuContainerComponent,
-    MenuButtonComponent,
+    MenuSectionComponent,
+    MenuContentComponent
   ],
   imports: [
     BrowserModule,

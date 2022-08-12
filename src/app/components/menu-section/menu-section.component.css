@@ -1,0 +1,36 @@
+.menu-section {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: #E7EAE3;
+    border-bottom: 1px solid black;
+    font-family: 'Palanquin Dark';
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-title {
+    width: 100%;
+    font-weight: 600;
+    font-size: 4vh;
+    padding: 2% 0;
+}
+
+.menu-title:hover {
+    background-color: #D0D2CC;
+}
+
+.menu-button {
+    width: 90%;
+    border: 1px solid black;
+    border-bottom: none;
+    margin: 3% 0;
+}
+
+.menu-button .menu-title {
+    font-weight: 500;
+    font-size: 2.5vh;
+}
