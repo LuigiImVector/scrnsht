@@ -36,6 +36,7 @@ bower_components/
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+!.vscode/*.code-snippets
 .history/*
 
 # misc
