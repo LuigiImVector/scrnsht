@@ -17,6 +17,7 @@
 #wrap {
     width: 600px;
     height: 390px;
+    border-radius: 0 0 6px 6px;
     padding: 0;
     overflow: hidden;
     position:  absolute;
@@ -26,11 +27,11 @@
 }
 
 iframe {
+    background-color: white;
     overflow: hidden;
     width: 800px;
     height: 520px;
     border: none;
-    border-radius: 0 0 6px 6px;
     zoom: 0.75;
     transform: scale(0.75);
     -moz-transform: scale(0.75);

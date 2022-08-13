@@ -6,7 +6,7 @@ import { SaveComponent } from './pages/save/save.component';
 
 const routes: Routes = [
   { path: '', component: HomepageComponent },
-  { path: 'save', component: SaveComponent },
+  { path: 'save', component: SaveComponent, data: {url: ''}},
 
   // otherwise redirect to home
   { path: '**', redirectTo: '' }

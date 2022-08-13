@@ -16,6 +16,7 @@ import { MatRippleModule } from '@angular/material/core';
 import { MenuContentComponent } from './components/menu-content/menu-content.component';
 import { CustomScreenshotComponent } from './components/custom-screenshot/custom-screenshot.component';
 import { TitleBarComponent } from './components/title-bar/title-bar.component';
+import { SafePipe } from './pipes/safe/safe.pipe';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { TitleBarComponent } from './components/title-bar/title-bar.component';
     MenuSectionComponent,
     MenuContentComponent,
     CustomScreenshotComponent,
-    TitleBarComponent
+    TitleBarComponent,
+    SafePipe
   ],
   imports: [
     BrowserModule,
