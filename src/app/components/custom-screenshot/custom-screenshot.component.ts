@@ -1,5 +1,4 @@
 import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core';
-import { DomSanitizer, SafeResourceUrl, SafeUrl} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-custom-screenshot',
@@ -10,15 +9,19 @@ import { DomSanitizer, SafeResourceUrl, SafeUrl} from '@angular/platform-browser
 export class CustomScreenshotComponent implements OnInit {
   @Input() url: string = "https://socus.netlify.app/";
 
-  constructor(private sanitizer: DomSanitizer) { }
+  constructor() { }
 
   ngOnInit(): void {
     this.transformToURL();
   }
 
   transformToURL(): void {
-    if(!(this.url.startsWith("https://") || this.url.startsWith("http://"))) { // NAND logic gate
-      this.url = "http://" + this.url;
+    try {
+      if(!(this.url.startsWith("https://") || this.url.startsWith("http://"))) { // NAND logic gate
+        this.url = "http://" + this.url;
+      }
+    } catch (error) {
+      console.error(error);
     }
   }
 

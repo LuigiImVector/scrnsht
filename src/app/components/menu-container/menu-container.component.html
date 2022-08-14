@@ -1,4 +1,4 @@
-<app-menu-section [title]="'Save screenshot'"></app-menu-section>
+<app-menu-section [title]="'Save screenshot'" (click)="sendMessage()"></app-menu-section>
 
 <app-menu-section [title]="'Edit screenshot'" (messageEvent)="receiveMessage($event)">
     <app-menu-section [title]="'Button color'" [isButton]="true" [class]="'menu-button'" *ngIf="statusFromChild"></app-menu-section>     
