@@ -1,0 +1,6 @@
+{
+    "/getImage": {
+        "target": "http://167.172.107.45:8000/",
+        "secure": false
+    }
+}

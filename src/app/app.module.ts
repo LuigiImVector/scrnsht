@@ -17,6 +17,7 @@ import { MenuContentComponent } from './components/menu-content/menu-content.com
 import { CustomScreenshotComponent } from './components/custom-screenshot/custom-screenshot.component';
 import { TitleBarComponent } from './components/title-bar/title-bar.component';
 import { SafePipe } from './pipes/safe/safe.pipe';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { SafePipe } from './pipes/safe/safe.pipe';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatRippleModule
+    MatRippleModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

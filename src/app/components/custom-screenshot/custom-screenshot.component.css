@@ -26,7 +26,7 @@
     transform: translate(-50%, -50%) scale(1.1);
 }
 
-iframe {
+/* iframe {
     background-color: white;
     overflow: hidden;
     width: 800px;
@@ -37,4 +37,4 @@ iframe {
     -moz-transform: scale(0.75);
     transform-origin: 0 0;
     -moz-transform-origin: 0 0;
-}
+} */
