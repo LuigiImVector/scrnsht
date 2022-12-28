@@ -25,7 +25,7 @@ export class CustomScreenshotComponent implements OnInit {
 
 
         // this.createImageFromBlob(this.getImage());
-        // this.getImageFromService();
+        this.getImageFromService();
 
       // }
     } catch (error) {
