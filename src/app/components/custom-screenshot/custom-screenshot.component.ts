@@ -20,14 +20,10 @@ export class CustomScreenshotComponent implements OnInit {
 
   transformToURL(): void {
     try {
-      // if(!(this.url.startsWith("https://") || this.url.startsWith("http://"))) { // NAND logic gate
-        // this.url = "http://" + this.url;
-
-
-        // this.createImageFromBlob(this.getImage());
-        this.getImageFromService();
-
-      // }
+      if(this.url && !(this.url.startsWith("https://") || this.url.startsWith("http://"))) { // NAND logic gate
+        this.url = "http://" + this.url;
+      }
+      this.getImageFromService();
     } catch (error) {
       console.error(error);
     }
